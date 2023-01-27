@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="drop-list drop-list__left">
+    <div class="drag-item" *ngFor="let item of items" [dndDraggable]>
+      {{ item }}
+    </div>
+    <div class="drag-item">Not Draggable</div>
+  </div>
+
+  <div
+    class="drop-list drop-list__right"
+    dndDropzone
+    (dndDragover)="onDragover($event)"
+    (dndDrop)="onDrop($event)"
+  ></div>
+</div>

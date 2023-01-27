@@ -1,0 +1,19 @@
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.drop-list{
+  width: 200px;
+  height: 400px;
+  background-color: aquamarine;
+}
+
+.drag-item{
+  padding: 10px;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  margin: 5px 10px;
+  background-color: chocolate;
+}
