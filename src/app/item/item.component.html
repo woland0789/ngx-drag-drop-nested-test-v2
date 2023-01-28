@@ -1,6 +1,8 @@
 <div class="drop-list" dndDropzone (dndDrop)="onDrop($event)">
+  <div class="drop-placeholder" dndPlaceholderRef></div>
+
   <div class="drag-item" *ngFor="let item of items">
     <div>{{ item.name }}</div>
+    <app-item [items]="item.items"></app-item>
   </div>
-  <div class="drop-placeholder" dndPlaceholderRef></div>
 </div>
